@@ -2,14 +2,31 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Root from './routes/root'
 import Error from './routes/error'
+import App from './routes/App'
+import Index from './pages'
+import Basic from './pages/basic'
+import Project from './pages/project'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root />,
-    errorElement: <Error />
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Index />
+      },
+      {
+       path: '/basic',
+       element: <Basic />
+      },
+      {
+        path: '/project',
+        element: <Project />
+      }
+    ]
   }
 ])
 
