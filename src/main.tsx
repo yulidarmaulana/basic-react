@@ -5,7 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Error from './routes/error'
 import App from './routes/App'
 import Index from './pages'
-import Basic from './pages/basic'
+import Learn from './pages/learn'
 import Project from './pages/project'
 
 const router = createBrowserRouter([
@@ -19,8 +19,8 @@ const router = createBrowserRouter([
         element: <Index />
       },
       {
-       path: '/basic',
-       element: <Basic />
+       path: '/learn',
+       element: <Learn />
       },
       {
         path: '/project',

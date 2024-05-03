@@ -1,18 +1,38 @@
-import { FC } from "react";
+import { FC } from 'react'
+import Card from '../components/card'
+import { data } from '../store/project'
+import { Link } from 'react-router-dom'
 
 const Project: FC = () => {
-  return (
-    <>
-      <section className="relative h-full">
-        <div className="mx-auto h-full py-16 z-50 bg-white">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-slate-800 mb-8">Project</h2>
-            <p className="leading-relaxed mb-8">The company started as a community called "FICOS". This community had 7 members and was working in an Open Source development, and had not been secured by a legal entity when it was founded in 2009. In order to develop the company and intend to expand the market range, this community had become a legal company, and had changed the name as "PHICOS" in 2016. Phicos Group is a holding company which is focused on digital development and technology solutions for government institutions, goods and service providers, universities, and lifestyle industries.</p>
-          </div>
-        </div>
-      </section>
-    </>
-  );
+	return (
+		<>
+			<section className='relative bg-white dark:bg-slate-800'>
+				<div className='z-50 mx-auto py-16 '>
+					<div className='mx-auto max-w-6xl'>
+						<h2 className='mb-3 flex scroll-m-20 align-bottom text-4xl font-extrabold tracking-tight text-astral-800 dark:text-astral-100 lg:text-5xl'>
+							Project
+						</h2>
+						<p className='text-md mb-2 font-medium leading-relaxed text-astral-800 dark:text-astral-100'>
+							a page from a collection of projects that come together in magical
+							harmony that just so happens to be created with the magic of React
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section className='mt-8'>
+				<div className='mx-auto max-w-6xl'>
+					<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-x-8 gap-y-8'>
+						{data.map(card => (
+              <Link to={`${card.url}`} key={card.title} target='_blank'>
+							<Card key={card.title} {...card} />
+              </Link>
+						))}
+					</div>
+				</div>
+			</section>
+		</>
+	)
 }
 
-export default Project;
+export default Project

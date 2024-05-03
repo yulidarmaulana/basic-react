@@ -4,11 +4,11 @@ import Navbar from '../components/navbar'
 function App() {
 	return (
 		<>
-			<header>
-      <Navbar  title="Basic React" links={[{ text: 'Basic', url: '/basic' }, { text: 'Project', url: '/project' }]}/>
+			<header className='sticky top-0 z-50'>
+      <Navbar  title="Basic React" links={[{ text: 'Learn', url: '/learn' }, { text: 'Project', url: '/project' }]}/>
       </header>
 			
-			<main>
+			<main >
 				<Outlet />
 			</main>
 		</>
