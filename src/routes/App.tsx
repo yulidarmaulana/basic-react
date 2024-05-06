@@ -5,10 +5,10 @@ function App() {
 	return (
 		<>
 			<header className='sticky top-0 z-50'>
-      <Navbar  title="Basic React" links={[{ text: 'Learn', url: '/learn' }, { text: 'Project', url: '/project' }]}/>
+      <Navbar  title="Basic React" links={[{ text: 'Project', url: '/project' }]}/>
       </header>
 			
-			<main >
+			<main className='bg-white dark:bg-slate-800'>
 				<Outlet />
 			</main>
 		</>
