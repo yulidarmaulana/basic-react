@@ -6,7 +6,7 @@ import Error from './routes/error'
 import App from './routes/App'
 import Index from './pages'
 import Project from './pages/project'
-import Todo from './pages/todo'
+import Todo from './pages/todo/todo'
 
 const router = createBrowserRouter([
 	{
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
 			{
 				path: '/todo',
 				element: <Todo />
-			}
+			},
 		]
 	}
 ])
