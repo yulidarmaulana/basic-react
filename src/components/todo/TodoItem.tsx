@@ -24,7 +24,7 @@ export const TodoItem = (props: { todo: Todo }) => {
     if (editingTodoId !== null && editInputRef.current) {
       editInputRef.current.focus()
     }
-  }, [editingTodoId])
+  }, [editingTodoId]) 
 
   const handleEdit = (todoId: string, todoText: string) => {
     setEditingTodoId(todoId)

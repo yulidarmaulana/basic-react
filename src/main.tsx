@@ -7,6 +7,9 @@ import App from './routes/App'
 import Index from './pages'
 import Project from './pages/project'
 import Todo from './pages/todo/todo'
+// import GitHubUserFinder from './components/GitHubUserFinder';
+import Finder from './pages/finder/finder'
+// import Finder from './pages/finder/finder'
 
 const router = createBrowserRouter([
 	{
@@ -27,6 +30,10 @@ const router = createBrowserRouter([
 				path: '/todo',
 				element: <Todo />
 			},
+			{
+				path: '/finder',
+				element: <Finder />
+			}
 		]
 	}
 ])

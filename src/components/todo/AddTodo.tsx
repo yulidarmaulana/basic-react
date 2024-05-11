@@ -28,7 +28,7 @@ export const AddTodo = () => {
   return (
     <>
     <form onSubmit={handleSubmission}>
-      <div className="flex items-center w-full max-w-lg gap-2 p-5 m-auto dark:text-slate-100 ">
+      <div className="flex items-center w-full max-w-lg gap-2 p-5 m-auto dark:text-slate-100">
         <Input
           ref={inputRef}
           type="text"
