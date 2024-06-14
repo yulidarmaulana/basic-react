@@ -24,7 +24,7 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
       <>
       <nav className="navbar bg-white text-slate-800 dark:bg-slate-800 dark:text-slate-300  p-4 flex justify-between max-w-full xl:px-56">
       <NavLink to={"/"} className="navbar-brand font-bold p-1 flex gap-2 text-blue-300">
-      <img src="/public/uwu.webp" width={48} height={48} className="mx-auto -rotate-6" alt="logo-react" />
+      <img src="/uwu.webp" width={48} height={48} className="mx-auto -rotate-6" alt="logo-react" />
         {title}
       </NavLink>
       <ul className="navbar-nav flex gap-2">
