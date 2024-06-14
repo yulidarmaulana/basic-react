@@ -13,7 +13,7 @@ const Project: FC = () => {
 							{/* <h2 className='mb-3 flex scroll-m-20 align-bottom text-4xl font-extrabold tracking-tight text-astral-800 dark:text-astral-100 lg:text-5xl'>
 								Project
 							</h2> */}
-							<p className='mb-6 font-medium text-xl text-astral-700 dark:text-astral-100'>
+							<p className='mb-6 font-medium text-center text-xl text-astral-700 dark:text-astral-100'>
 							a page from a collection of projects that come together in a magical harmony that happens to be made with React
 							</p>
 						</div>
@@ -22,7 +22,7 @@ const Project: FC = () => {
 
 				<section className='relative dark:bg-slate-800'>
 					<div className='mx-auto max-w-6xl'>
-						<div className='grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3'>
+						<div className='grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3'>
 							{data.map(card => (
 								<Link to={`${card.url}`} key={card.title}>
 									<Card key={card.title} {...card} />

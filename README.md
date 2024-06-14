@@ -1,3 +1,3 @@
-# React + TypeScript + Vite + Tailwind
+# Basic React
 
-This template provides a minimal setup to get React working in Vite with React Router, Typescript and Tailwindcss.
+a collection of projects that come together in a magical harmony made with React.

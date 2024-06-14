@@ -11,7 +11,7 @@ interface Card {
 const Card =({stack, title, description}: Card) => {
 	return (
 		<>
-			<div className='card card-compact rounded-3xl shadow-sm dark:bg-slate-300 dark:text-slate-300'>
+			<div className='card card-compact transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-11 duration-300 rounded-3xl shadow-sm dark:bg-slate-300 dark:text-slate-300'>
 				{/* <figure>
 					<img src={imageSrc} alt='Card Image' />
 				</figure> */}

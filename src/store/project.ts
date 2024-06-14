@@ -10,5 +10,17 @@ export const data = [
     description: "Github User Search App with React and Typescript",
     stack: "React",
     url: '/finder'
+  },
+  {
+    title: "Currency Converter",
+    description: "Currency Converter build with React",
+    stack: "React",
+    url: '/currency'
+  },
+  {
+    title: "Weather",
+    description: "Weather build with React",
+    stack: "React",
+    url: '/weather'
   }
 ]

@@ -7,9 +7,9 @@ import App from './routes/App'
 import Index from './pages'
 import Project from './pages/project'
 import Todo from './pages/todo/todo'
-// import GitHubUserFinder from './components/GitHubUserFinder';
 import Finder from './pages/finder/finder'
-// import Finder from './pages/finder/finder'
+import Currency from './pages/currency/currency'
+import Weather from './pages/weather/weatherDetail'
 
 const router = createBrowserRouter([
 	{
@@ -21,7 +21,6 @@ const router = createBrowserRouter([
 				index: true,
 				element: <Index />
 			},
-
 			{
 				path: '/project',
 				element: <Project />
@@ -33,6 +32,14 @@ const router = createBrowserRouter([
 			{
 				path: '/finder',
 				element: <Finder />
+			},
+			{
+				path: '/currency',
+				element: <Currency />
+			},
+			{
+				path: '/weather',
+				element: <Weather />
 			}
 		]
 	}
