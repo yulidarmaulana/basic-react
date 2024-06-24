@@ -37,8 +37,12 @@ const Weather: React.FC = () => {
 					Get
 				</button>
 
-				{error && <p>{error}</p>}
 			</div>
+
+			<div className="text-center w-full max-w-lg justify-items-center mx-auto">
+				{error && <p className='text-slate-800 text-lg font-medium dark:text-slate-100'>{error}</p>}
+			</div>
+
 			{weather && (
 				<div className='m-auto flex w-full max-w-lg items-center gap-2 px-5'>
 					<Card {...weather} />

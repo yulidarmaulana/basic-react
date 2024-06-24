@@ -19,7 +19,7 @@ export const data = [
   },
   {
     title: "Weather",
-    description: "Weather build with React",
+    description: "display weather forecasts by location",
     stack: "React",
     url: '/weather'
   }
